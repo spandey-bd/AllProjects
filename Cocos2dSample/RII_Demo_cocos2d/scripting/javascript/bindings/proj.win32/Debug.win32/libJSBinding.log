@@ -1,0 +1,158 @@
+﻿Build started 7/10/2014 12:11:33 PM.
+     1>Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\libJSBinding.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         if not exist "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\" mkdir "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         xcopy /Y /Q "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\external\sqlite3\libraries\win32\*.*" "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         :VCEnd
+         2 File(s) copied
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\kazmath\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\platform\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\platform\third_party\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\platform\third_party\win32\pthread" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\CocosDenshion\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\.." /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\spidermonkey-win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\external\chipmunk\include\chipmunk" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\external\libwebsockets\win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\extensions" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\extensions\LocalStorage" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\..\..\..\..\extensions\network" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _LIB /D DEBUG /D COCOS2D_DEBUG=1 /D XP_WIN /D JS_HAVE___INTN /D JS_INTPTR_TYPE=int /D COCOS2D_JAVASCRIPT=1 /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4068 /wd4101 /wd4800 /wd4251 /wd4996 /wd4244 /analyze- /errorReport:prompt ..\cocos2d_specifics.cpp ..\cocosjs_manual_conversions.cpp ..\generated\jsb_cocos2dx_auto.cpp ..\generated\jsb_cocos2dx_extension_auto.cpp ..\generated\jsb_cocos2dx_studio_auto.cpp ..\jsb_cocos2dx_extension_manual.cpp ..\jsb_cocos2dx_studio_manual.cpp ..\jsb_opengl_functions.cpp ..\jsb_opengl_manual.cpp ..\jsb_opengl_registration.cpp ..\jsb_websocket.cpp ..\js_bindings_ccbreader.cpp ..\js_bindings_chipmunk_auto_classes.cpp ..\js_bindings_chipmunk_functions.cpp ..\js_bindings_chipmunk_manual.cpp ..\js_bindings_chipmunk_registration.cpp ..\js_bindings_core.cpp ..\js_bindings_opengl.cpp ..\js_bindings_system_functions.cpp ..\js_bindings_system_registration.cpp ..\js_manual_conversions.cpp ..\ScriptingCore.cpp ..\XMLHTTPRequest.cpp
+         XMLHTTPRequest.cpp
+         ScriptingCore.cpp
+         js_manual_conversions.cpp
+         js_bindings_system_registration.cpp
+         js_bindings_system_functions.cpp
+         js_bindings_opengl.cpp
+         js_bindings_core.cpp
+         js_bindings_chipmunk_registration.cpp
+         js_bindings_chipmunk_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         js_bindings_chipmunk_functions.cpp
+         js_bindings_chipmunk_auto_classes.cpp
+         js_bindings_ccbreader.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         jsb_websocket.cpp
+         jsb_opengl_registration.cpp
+         jsb_opengl_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\jsb_opengl_manual.cpp(385): warning C4018: '<' : signed/unsigned mismatch
+         jsb_opengl_functions.cpp
+         jsb_cocos2dx_studio_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         jsb_cocos2dx_extension_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         jsb_cocos2dx_studio_auto.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(4885): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(5157): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(6399): warning C4083: expected '('; found identifier 'NO'
+         jsb_cocos2dx_extension_auto.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_extension_auto.cpp(1884): warning C4083: expected '('; found identifier 'NO'
+         Generating Code...
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(5159): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(4887): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_studio_auto.cpp(6401): warning C4700: uninitialized local variable 'arg0' used
+         Compiling...
+         jsb_cocos2dx_auto.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1294): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1461): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1500): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1541): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(2595): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(4422): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(4425): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(10119): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(10269): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12850): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12851): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12852): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(18875): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(18923): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(18945): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(19044): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(19064): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(19088): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(22272): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(22361): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(23184): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28100): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28139): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28176): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28397): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28419): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28439): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(30295): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(30636): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(47225): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(47486): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51107): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51111): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51190): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51194): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(53757): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(53775): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(55318): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(55411): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(56578): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(56640): warning C4083: expected '('; found identifier 'NO'
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(57227): warning C4083: expected '('; found identifier 'NO'
+         cocosjs_manual_conversions.cpp
+         cocos2d_specifics.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1297): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1464): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1503): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(1544): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(2597): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(4427): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(4427): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12854): warning C4700: uninitialized local variable 'arg2' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12854): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(12854): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(18924): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(18946): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(19045): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(19089): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(22274): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(22364): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(23187): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28140): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28177): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28398): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(28420): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(30297): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(30637): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(47228): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(47488): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51109): warning C4700: uninitialized local variable 'arg2' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51112): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51192): warning C4700: uninitialized local variable 'arg2' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(51195): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(53758): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(53777): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(55320): warning C4700: uninitialized local variable 'arg1' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(55413): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(56579): warning C4700: uninitialized local variable 'jsret' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(56642): warning C4700: uninitialized local variable 'arg0' used
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\scripting\javascript\bindings\generated\jsb_cocos2dx_auto.cpp(57229): warning C4700: uninitialized local variable 'arg0' used
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libJSBinding.lib" /NOLOGO Debug.win32\cocos2d_specifics.obj
+         Debug.win32\cocosjs_manual_conversions.obj
+         Debug.win32\jsb_cocos2dx_auto.obj
+         Debug.win32\jsb_cocos2dx_extension_auto.obj
+         Debug.win32\jsb_cocos2dx_studio_auto.obj
+         Debug.win32\jsb_cocos2dx_extension_manual.obj
+         Debug.win32\jsb_cocos2dx_studio_manual.obj
+         Debug.win32\jsb_opengl_functions.obj
+         Debug.win32\jsb_opengl_manual.obj
+         Debug.win32\jsb_opengl_registration.obj
+         Debug.win32\jsb_websocket.obj
+         Debug.win32\js_bindings_ccbreader.obj
+         Debug.win32\js_bindings_chipmunk_auto_classes.obj
+         Debug.win32\js_bindings_chipmunk_functions.obj
+         Debug.win32\js_bindings_chipmunk_manual.obj
+         Debug.win32\js_bindings_chipmunk_registration.obj
+         Debug.win32\js_bindings_core.obj
+         Debug.win32\js_bindings_opengl.obj
+         Debug.win32\js_bindings_system_functions.obj
+         Debug.win32\js_bindings_system_registration.obj
+         Debug.win32\js_manual_conversions.obj
+         Debug.win32\ScriptingCore.obj
+         Debug.win32\XMLHTTPRequest.obj
+         libJSBinding.vcxproj -> D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libJSBinding.lib
+     1>Done Building Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\javascript\bindings\proj.win32\libJSBinding.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:42.25

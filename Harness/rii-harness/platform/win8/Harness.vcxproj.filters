@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>f9af2548-8f92-4e27-a1f1-3f8779edb27b</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>ed3bc35c-bbcd-4dcd-aa5b-cfb2303714dd</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="resources">
+      <UniqueIdentifier>{d64ffa10-823c-43d3-9c3e-3fa7c0004abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\media">
+      <UniqueIdentifier>{30ca1e49-fdca-4245-a77b-5c2a1b68f899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\media\hd">
+      <UniqueIdentifier>{9e7c7ed6-b108-478d-87ff-0e2e0a74a4cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\src\AppDelegate.cpp" />
+    <ClCompile Include="..\..\src\EmulatorPixmapNode.cpp" />
+    <ClCompile Include="..\..\src\HarnessScene.cpp" />
+    <ClCompile Include="..\..\src\LibretroCallbacks.cpp" />
+    <ClCompile Include="..\..\..\rii-libretro\test\LibretroTestCore.c" />
+    <ClCompile Include="..\..\src\EmulatorLayer.cpp" />
+    <ClCompile Include="..\..\src\gameconfig.c" />
+    <ClCompile Include="..\..\src\InputModule.cpp" />
+    <ClCompile Include="..\..\src\VCButton.cpp" />
+    <ClCompile Include="..\..\src\VirtualController.cpp" />
+    <ClCompile Include="..\..\src\LibretroWrapper.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Harness_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\rii-libretro\test\22k16-loop.raw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\resources\media\hd\A.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\A_pressed.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\B.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\B_pressed.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\DPad.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\X.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\X_pressed.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\Y.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\hd\Y_pressed.png">
+      <Filter>resources\media\hd</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+- comment blocks to all sources						OK
+- bios directory							OK
+- Android makefile							OK
+- libretro audio calls							OK
+- BreakReason handling to JPO/JPE exit					OK
+- BreakReason handling to all virtual memory exit			OK
+- Get rid of ram.S							OK
+- exit_program() call should force the CPU thread to shut down.		OK
+- retro_unload_game() call should force the CPU thread to shut down.	OK
+- proper audio thread shutdown handling					OK
+- libretro keyboard polling calls
+- libretro pointing device handling
+- Improved audio latency handling on Android (after screen rotate)
+- CD-ROM support

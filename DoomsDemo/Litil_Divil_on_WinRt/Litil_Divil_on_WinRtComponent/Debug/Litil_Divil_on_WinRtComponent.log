@@ -1,0 +1,20 @@
+﻿Build started 7/29/2014 7:05:48 PM.
+     1>Project "C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\CL.exe /c /IC:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\ /I"Generated Files\\" /IDebug\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _WINRT_DLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\Litil_Divil_on_WinRtComponent.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt Litil_Divil_on_WinRtComponent.cpp
+         Litil_Divil_on_WinRtComponent.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Retro Infinity\sibi\rii-pax86-c\wp8\output" d3d11.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib pax86.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /WINMD /WINMDFILE:"C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\PhoneDirect3DXamlAppComponent.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Debug\Litil_Divil_on_WinRtComponent.obj
+         Debug\CubeRenderer.obj
+         Debug\Direct3DBase.obj
+         Debug\Direct3DContentProvider.obj
+         Debug\pch.obj
+         ..\..\pax86\pax86.lib
+            Creating library C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.lib and object C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.exp
+     1>Litil_Divil_on_WinRtComponent.obj : error LNK2019: unresolved external symbol _retro_init referenced in function "public: virtual class Platform::String ^ __cdecl PhoneDirect3DXamlAppComponent::Direct3DBackground::[PhoneDirect3DXamlAppComponent::__IDirect3DBackgroundPublicNonVirtuals]::TestString(void)" (?TestString@?Q__IDirect3DBackgroundPublicNonVirtuals@PhoneDirect3DXamlAppComponent@@Direct3DBackground@2@U$AAAP$AAVString@Platform@@XZ)
+     1>C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Debug\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.dll : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.89

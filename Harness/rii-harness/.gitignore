@@ -1,0 +1,17 @@
+## Jetbrains Directory-based project format
+.idea/
+
+## Jetbrains File-based project format
+*.ipr
+*.iml
+*.iws
+
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/

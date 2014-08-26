@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{013f1070-d173-4323-80f4-ee63cb64a367}</ProjectGuid>
+    <RootNamespace>Harness</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <XapOutputs>true</XapOutputs>
+    <XapFilename>Harness_$(Configuration)_$(Platform).xap</XapFilename>
+    <WinMDAssembly>true</WinMDAssembly>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;WP8;_WP8;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(ProjectDir)..\..\..\rii-harness\src;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\include;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\platform\wp8;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\platform\winrt;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)..\..\..\cocos2d-x\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;$(ProjectDir)..\..\..\rii-libretro\src;$(ProjectDir)..\..\..\rii-harness\external\lua-5.2.2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);$(ProjectDir)\..\..\..\external\lua-5.2.2\src;$(ProjectDir)\..\..\..\rii-libretro\src;$(ProjectDir)\..\..\..\rii-wrapper\custom_cocos2dx\cocos2dx\include;$(ProjectDir)\..\..\..\rii-wrapper\custom_cocos2dx\cocos2dx;$(ProjectDir)\..\..\..\external\custom_cocos2dx\cocos2dx\platform\winrt;$(ProjectDir)\..\..\..\external\custom_cocos2dx\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)\..\..\..\external\custom_cocos2dx\cocos2dx\kazmath\include;$(ProjectDir)\..\..\..\external\custom_cocos2dx\cocos2dx\platform;$(ProjectDir)\..\..\..\rii-harness\src;$(ProjectDir)\..\..\..\external\custom_cocos2dx\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\resources\media\sd\A.png" />
+    <Image Include="..\..\resources\media\sd\A_pressed.png" />
+    <Image Include="..\..\resources\media\sd\B.png" />
+    <Image Include="..\..\resources\media\sd\B_pressed.png" />
+    <Image Include="..\..\resources\media\sd\DPad.png" />
+    <Image Include="..\..\resources\media\sd\X.png" />
+    <Image Include="..\..\resources\media\sd\X_pressed.png" />
+    <Image Include="..\..\resources\media\sd\Y.png" />
+    <Image Include="..\..\resources\media\sd\Y_pressed.png" />
+    <Image Include="Assets\ApplicationIcon.png" />
+    <Image Include="Assets\AlignmentGrid.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileLarge.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileMedium.png" />
+    <Image Include="Assets\Tiles\FlipCycleTileSmall.png" />
+    <Image Include="Assets\Tiles\IconicTileMediumLarge.png" />
+    <Image Include="Assets\Tiles\IconicTileSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Harness.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\rii-libretro\test\LibretroTestCore.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AppDelegate.cpp" />
+    <ClCompile Include="..\..\src\EmulatorLayer.cpp" />
+    <ClCompile Include="..\..\src\EmulatorPixmapNode.cpp" />
+    <ClCompile Include="..\..\src\gameconfig.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HarnessScene.cpp" />
+    <ClCompile Include="..\..\src\InputModule.cpp" />
+    <ClCompile Include="..\..\src\LibretroCallbacks.cpp" />
+    <ClCompile Include="..\..\src\LibretroWrapper.c">
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</CompileAsWinRT>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VCButton.cpp" />
+    <ClCompile Include="..\..\src\VirtualController.cpp" />
+    <ClCompile Include="Harness.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\external\custom_cocos2dx\cocos2dx\proj.wp8\libcocos2d.vcxproj">
+      <Project>{871aadce-3905-48ef-ac2b-c67c335b0dcc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\lua-5.2.2\platform\wp8\lua-5.2.2.vcxproj">
+      <Project>{23702877-d551-4381-9968-913ca6501929}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\rii-libretro\test\22k16-loop.raw">
+      <FileType>Document</FileType>
+    </Media>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

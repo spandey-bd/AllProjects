@@ -1,0 +1,51 @@
+﻿Build started 7/30/2014 7:53:04 PM.
+     1>Project "C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\\pax86\include" /I"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\\" /I"Generated Files\\" /IARM\Release\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /O2 /Oi /Oy- /GL /D _WINRT_DLL /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"ARM\Release\Litil_Divil_on_WinRtComponent.pch" /Fo"ARM\Release\\" /Fd"ARM\Release\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /I"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\\pax86\include" /I"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\\" /I"Generated Files\\" /IARM\Release\ /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /O2 /Oi /Oy- /GL /D _WINRT_DLL /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"ARM\Release\Litil_Divil_on_WinRtComponent.pch" /Fo"ARM\Release\\" /Fd"ARM\Release\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt Litil_Divil_on_WinRtComponent.cpp CubeRenderer.cpp Direct3DBase.cpp Direct3DContentProvider.cpp Pax86Renderer.cpp
+         Litil_Divil_on_WinRtComponent.cpp
+         CubeRenderer.cpp
+         Direct3DBase.cpp
+         Direct3DContentProvider.cpp
+     1>Litil_Divil_on_WinRtComponent.cpp(47): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Litil_Divil_on_WinRtComponent.cpp(48): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Litil_Divil_on_WinRtComponent.cpp(61): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Litil_Divil_on_WinRtComponent.cpp(62): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Litil_Divil_on_WinRtComponent.cpp(63): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Litil_Divil_on_WinRtComponent.cpp(64): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         Pax86Renderer.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.dll" /NOLOGO /LIBPATH:"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\\pax86" d3d11.lib WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib pax86.lib xaudio2.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /WINMD /WINMDFILE:"C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\PhoneDirect3DXamlAppComponent.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM /DLL ARM\Release\Litil_Divil_on_WinRtComponent.obj
+         ARM\Release\CubeRenderer.obj
+         ARM\Release\Direct3DBase.obj
+         ARM\Release\Direct3DContentProvider.obj
+         ARM\Release\Pax86Renderer.obj
+         ARM\Release\pch.obj
+         ..\..\pax86\pax86.lib
+            Creating library C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.lib and object C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.exp
+     1>LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         Finished generating code
+     1>pax86.lib(BIOS_init.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(BIOS_init.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_device.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_device.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_fcb.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_fcb.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_file.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_file.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_kernel.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_kernel.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_mem.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_mem.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(DOS_task.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(DOS_task.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(int10h.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(int10h.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(int21h.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(int21h.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(int67h.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(int67h.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(ints.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(ints.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(mouse.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(mouse.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(XMS.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(XMS.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(timer.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(timer.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(cdrom.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(cdrom.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+     1>pax86.lib(pax86retro.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'pax86.lib(pax86retro.obj)' or at 'C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\vc110.pdb'; linking object as if no debug info
+         Litil_Divil_on_WinRtComponent.vcxproj -> C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\ARM\Release\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.dll
+     1>Done Building Project "C:\Users\Sudheesh.Nair\Desktop\Backup trekmo running\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRtComponent\Litil_Divil_on_WinRtComponent.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.47

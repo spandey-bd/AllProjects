@@ -1,0 +1,350 @@
+﻿Build started 7/1/2014 8:03:18 PM.
+     1>Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\libExtensions.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft SDKs\Windows\v7.1A\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\chipmunk\include\chipmunk" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\sqlite3\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\libwebsockets\win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\kazmath\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\pthread" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\zlib" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\CocosDenshion\include" /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USREXDLL /D COCOS2D_DEBUG=1 /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"Debug.win32\libExtensions.pch" /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /FIpch.h /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft SDKs\Windows\v7.1A\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\chipmunk\include\chipmunk" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\sqlite3\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\libwebsockets\win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\kazmath\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\pthread" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\cocos2dx\platform\third_party\win32\zlib" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\CocosDenshion\include" /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USREXDLL /D COCOS2D_DEBUG=1 /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug.win32\libExtensions.pch" /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /FIpch.h /analyze- /errorReport:prompt ..\AssetsManager\AssetsManager.cpp ..\CCBReader\CCBAnimationManager.cpp ..\CCBReader\CCBFileLoader.cpp ..\CCBReader\CCBKeyframe.cpp ..\CCBReader\CCBReader.cpp ..\CCBReader\CCBSequence.cpp ..\CCBReader\CCBSequenceProperty.cpp ..\CCBReader\CCBValue.cpp ..\CCBReader\CCControlButtonLoader.cpp ..\CCBReader\CCControlLoader.cpp ..\CCBReader\CCData.cpp ..\CCBReader\CCLabelBMFontLoader.cpp ..\CCBReader\CCLabelTTFLoader.cpp ..\CCBReader\CCLayerColorLoader.cpp ..\CCBReader\CCLayerGradientLoader.cpp ..\CCBReader\CCLayerLoader.cpp ..\CCBReader\CCMenuItemImageLoader.cpp ..\CCBReader\CCMenuItemLoader.cpp ..\CCBReader\CCNode+CCBRelativePositioning.cpp ..\CCBReader\CCNodeLoader.cpp ..\CCBReader\CCNodeLoaderLibrary.cpp ..\CCBReader\CCParticleSystemQuadLoader.cpp ..\CCBReader\CCScale9SpriteLoader.cpp ..\CCBReader\CCScrollViewLoader.cpp ..\CCBReader\CCSpriteLoader.cpp ..\CocoStudio\ActionTimeline\CCActionTimeline.cpp ..\CocoStudio\ActionTimeline\CCActionTimelineCache.cpp ..\CocoStudio\ActionTimeline\CCFrame.cpp ..\CocoStudio\ActionTimeline\CCNodeReader.cpp ..\CocoStudio\ActionTimeline\CCTimeLine.cpp ..\CocoStudio\Action\CCActionEaseEx.cpp ..\CocoStudio\Action\CCActionFrame.cpp ..\CocoStudio\Action\CCActionFrameEasing.cpp ..\CocoStudio\Action\CCActionManager.cpp ..\CocoStudio\Action\CCActionNode.cpp ..\CocoStudio\Action\CCActionObject.cpp ..\CocoStudio\Armature\animation\CCArmatureAnimation.cpp ..\CocoStudio\Armature\animation\CCProcessBase.cpp ..\CocoStudio\Armature\animation\CCTween.cpp ..\CocoStudio\Armature\CCArmature.cpp ..\CocoStudio\Armature\CCBone.cpp ..\CocoStudio\Armature\datas\CCDatas.cpp ..\CocoStudio\Armature\display\CCBatchNode.cpp ..\CocoStudio\Armature\display\CCDecorativeDisplay.cpp ..\CocoStudio\Armature\display\CCDisplayFactory.cpp ..\CocoStudio\Armature\display\CCDisplayManager.cpp ..\CocoStudio\Armature\display\CCSkin.cpp ..\CocoStudio\Armature\physics\CCColliderDetector.cpp ..\CocoStudio\Armature\utils\CCArmatureDataManager.cpp ..\CocoStudio\Armature\utils\CCArmatureDefine.cpp ..\CocoStudio\Armature\utils\CCDataReaderHelper.cpp ..\CocoStudio\Armature\utils\CCSpriteFrameCacheHelper.cpp ..\CocoStudio\Armature\utils\CCTransformHelp.cpp ..\CocoStudio\Armature\utils\CCTweenFunction.cpp ..\CocoStudio\Armature\utils\CCUtilMath.cpp ..\CocoStudio\Components\CCComAttribute.cpp ..\CocoStudio\Components\CCComAudio.cpp ..\CocoStudio\Components\CCComController.cpp ..\CocoStudio\Components\CCComRender.cpp ..\CocoStudio\Components\CCInputDelegate.cpp ..\CocoStudio\GUI\BaseClasses\UIWidget.cpp ..\CocoStudio\GUI\Layouts\UILayout.cpp ..\CocoStudio\GUI\Layouts\UILayoutDefine.cpp ..\CocoStudio\GUI\Layouts\UILayoutParameter.cpp ..\CocoStudio\GUI\System\CocosGUI.cpp ..\CocoStudio\GUI\System\UIHelper.cpp ..\CocoStudio\GUI\System\UITouchGroup.cpp ..\CocoStudio\GUI\UIWidgets\ScrollWidget\UIListView.cpp ..\CocoStudio\GUI\UIWidgets\ScrollWidget\UIPageView.cpp ..\CocoStudio\GUI\UIWidgets\ScrollWidget\UIScrollView.cpp ..\CocoStudio\GUI\UIWidgets\UIButton.cpp ..\CocoStudio\GUI\UIWidgets\UICheckBox.cpp ..\CocoStudio\GUI\UIWidgets\UIImageView.cpp ..\CocoStudio\GUI\UIWidgets\UILabel.cpp ..\CocoStudio\GUI\UIWidgets\UILabelAtlas.cpp ..\CocoStudio\GUI\UIWidgets\UILabelBMFont.cpp ..\CocoStudio\GUI\UIWidgets\UILoadingBar.cpp ..\CocoStudio\GUI\UIWidgets\UIRichText.cpp ..\CocoStudio\GUI\UIWidgets\UISlider.cpp ..\CocoStudio\GUI\UIWidgets\UITextField.cpp ..\CocoStudio\Json\CocoLoader.cpp ..\CocoStudio\Json\DictionaryHelper.cpp ..\CocoStudio\Reader\GUIReader.cpp ..\CocoStudio\Reader\SceneReader.cpp ..\CocoStudio\Reader\WidgetReader\ButtonReader\ButtonReader.cpp ..\CocoStudio\Reader\WidgetReader\CheckBoxReader\CheckBoxReader.cpp ..\CocoStudio\Reader\WidgetReader\ImageViewReader\ImageViewReader.cpp ..\CocoStudio\Reader\WidgetReader\LabelAtlasReader\LabelAtlasReader.cpp ..\CocoStudio\Reader\WidgetReader\LabelBMFontReader\LabelBMFontReader.cpp ..\CocoStudio\Reader\WidgetReader\LabelReader\LabelReader.cpp ..\CocoStudio\Reader\WidgetReader\LayoutReader\LayoutReader.cpp ..\CocoStudio\Reader\WidgetReader\ListViewReader\ListViewReader.cpp ..\CocoStudio\Reader\WidgetReader\LoadingBarReader\LoadingBarReader.cpp ..\CocoStudio\Reader\WidgetReader\PageViewReader\PageViewReader.cpp ..\CocoStudio\Reader\WidgetReader\ScrollViewReader\ScrollViewReader.cpp ..\CocoStudio\Reader\WidgetReader\SliderReader\SliderReader.cpp ..\CocoStudio\Reader\WidgetReader\TextFieldReader\TextFieldReader.cpp ..\CocoStudio\Reader\WidgetReader\WidgetReader.cpp ..\CocoStudio\Trigger\ObjectFactory.cpp ..\CocoStudio\Trigger\TriggerBase.cpp ..\CocoStudio\Trigger\TriggerMng.cpp ..\CocoStudio\Trigger\TriggerObj.cpp ..\GUI\CCControlExtension\CCControl.cpp ..\GUI\CCControlExtension\CCControlButton.cpp ..\GUI\CCControlExtension\CCControlColourPicker.cpp ..\GUI\CCControlExtension\CCControlHuePicker.cpp ..\GUI\CCControlExtension\CCControlPotentiometer.cpp ..\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp ..\GUI\CCControlExtension\CCControlSlider.cpp ..\GUI\CCControlExtension\CCControlStepper.cpp ..\GUI\CCControlExtension\CCControlSwitch.cpp ..\GUI\CCControlExtension\CCControlUtils.cpp ..\GUI\CCControlExtension\CCInvocation.cpp ..\GUI\CCControlExtension\CCScale9Sprite.cpp ..\GUI\CCEditBox\CCEditBox.cpp ..\GUI\CCEditBox\CCEditBoxImplWin.cpp ..\GUI\CCScrollView\CCScrollView.cpp ..\GUI\CCScrollView\CCSorting.cpp ..\GUI\CCScrollView\CCTableView.cpp ..\GUI\CCScrollView\CCTableViewCell.cpp ..\LocalStorage\LocalStorage.cpp ..\network\HttpClient.cpp ..\network\Websocket.cpp ..\physics_nodes\CCPhysicsDebugNode.cpp ..\physics_nodes\CCPhysicsSprite.cpp ..\spine\Animation.cpp ..\spine\AnimationState.cpp ..\spine\AnimationStateData.cpp ..\spine\Atlas.cpp ..\spine\AtlasAttachmentLoader.cpp ..\spine\Attachment.cpp ..\spine\AttachmentLoader.cpp ..\spine\Bone.cpp ..\spine\BoneData.cpp ..\spine\CCSkeleton.cpp ..\spine\CCSkeletonAnimation.cpp ..\spine\extension.cpp ..\spine\Json.cpp ..\spine\RegionAttachment.cpp ..\spine\Skeleton.cpp ..\spine\SkeletonData.cpp ..\spine\SkeletonJson.cpp ..\spine\Skin.cpp ..\spine\Slot.cpp ..\spine\SlotData.cpp "..\spine\spine-cocos2dx.cpp" Win32InputBox.cpp
+         Win32InputBox.cpp
+         spine-cocos2dx.cpp
+         SlotData.cpp
+         Slot.cpp
+         Skin.cpp
+         SkeletonJson.cpp
+         SkeletonData.cpp
+         Skeleton.cpp
+         RegionAttachment.cpp
+         Json.cpp
+         extension.cpp
+         CCSkeletonAnimation.cpp
+         CCSkeleton.cpp
+         BoneData.cpp
+         Bone.cpp
+         AttachmentLoader.cpp
+         Attachment.cpp
+         AtlasAttachmentLoader.cpp
+         Atlas.cpp
+         AnimationStateData.cpp
+         Generating Code...
+         Compiling...
+         AnimationState.cpp
+         Animation.cpp
+         CCPhysicsSprite.cpp
+         CCPhysicsDebugNode.cpp
+         Websocket.cpp
+         HttpClient.cpp
+         LocalStorage.cpp
+         CCTableViewCell.cpp
+         CCTableView.cpp
+         CCSorting.cpp
+         CCScrollView.cpp
+         CCEditBoxImplWin.cpp
+         CCEditBox.cpp
+         CCScale9Sprite.cpp
+         CCInvocation.cpp
+         CCControlUtils.cpp
+         CCControlSwitch.cpp
+         CCControlStepper.cpp
+         CCControlSlider.cpp
+         CCControlSaturationBrightnessPicker.cpp
+         Generating Code...
+         Compiling...
+         CCControlPotentiometer.cpp
+         CCControlHuePicker.cpp
+         CCControlColourPicker.cpp
+         CCControlButton.cpp
+         CCControl.cpp
+         TriggerObj.cpp
+         TriggerMng.cpp
+         TriggerBase.cpp
+         ObjectFactory.cpp
+         WidgetReader.cpp
+         TextFieldReader.cpp
+         SliderReader.cpp
+         ScrollViewReader.cpp
+         PageViewReader.cpp
+         LoadingBarReader.cpp
+         ListViewReader.cpp
+         LayoutReader.cpp
+         LabelReader.cpp
+         LabelBMFontReader.cpp
+         LabelAtlasReader.cpp
+         Generating Code...
+         Compiling...
+         ImageViewReader.cpp
+         CheckBoxReader.cpp
+         ButtonReader.cpp
+         SceneReader.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\reader\scenereader.cpp(497): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         GUIReader.cpp
+         DictionaryHelper.cpp
+         CocoLoader.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.cpp(134): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.cpp(172): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.cpp(186): warning C4018: '<' : signed/unsigned mismatch
+         UITextField.cpp
+         UISlider.cpp
+         UIRichText.cpp
+         UILoadingBar.cpp
+         UILabelBMFont.cpp
+         UILabelAtlas.cpp
+         UILabel.cpp
+         UIImageView.cpp
+         UICheckBox.cpp
+         UIButton.cpp
+         UIScrollView.cpp
+         UIPageView.cpp
+         UIListView.cpp
+         Generating Code...
+         Compiling...
+         UITouchGroup.cpp
+         UIHelper.cpp
+         CocosGUI.cpp
+         UILayoutParameter.cpp
+         UILayoutDefine.cpp
+         UILayout.cpp
+         UIWidget.cpp
+         CCInputDelegate.cpp
+         CCComRender.cpp
+         CCComController.cpp
+         CCComAudio.cpp
+         CCComAttribute.cpp
+         CCUtilMath.cpp
+         CCTweenFunction.cpp
+         CCTransformHelp.cpp
+         CCSpriteFrameCacheHelper.cpp
+         CCDataReaderHelper.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\armature\utils\ccdatareaderhelper.cpp(851): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         CCArmatureDefine.cpp
+         CCArmatureDataManager.cpp
+         CCColliderDetector.cpp
+         Generating Code...
+         Compiling...
+         CCSkin.cpp
+         CCDisplayManager.cpp
+         CCDisplayFactory.cpp
+         CCDecorativeDisplay.cpp
+         CCBatchNode.cpp
+         CCDatas.cpp
+         CCBone.cpp
+         CCArmature.cpp
+         CCTween.cpp
+         CCProcessBase.cpp
+         CCArmatureAnimation.cpp
+         CCActionObject.cpp
+         CCActionNode.cpp
+         CCActionManager.cpp
+         CCActionFrameEasing.cpp
+         CCActionFrame.cpp
+         CCActionEaseEx.cpp
+         CCTimeLine.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(157): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(159): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(167): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(179): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(179): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(184): warning C4018: '>' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(193): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(221): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(228): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(255): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\actiontimeline\cctimeline.cpp(255): warning C4018: '>=' : signed/unsigned mismatch
+         CCNodeReader.cpp
+         CCFrame.cpp
+         Generating Code...
+         Compiling...
+         CCActionTimelineCache.cpp
+         CCActionTimeline.cpp
+         CCSpriteLoader.cpp
+         CCScrollViewLoader.cpp
+         CCScale9SpriteLoader.cpp
+         CCParticleSystemQuadLoader.cpp
+         CCNodeLoaderLibrary.cpp
+         CCNodeLoader.cpp
+         CCNode+CCBRelativePositioning.cpp
+         CCMenuItemLoader.cpp
+         CCMenuItemImageLoader.cpp
+         CCLayerLoader.cpp
+         CCLayerGradientLoader.cpp
+         CCLayerColorLoader.cpp
+         CCLabelTTFLoader.cpp
+         CCLabelBMFontLoader.cpp
+         CCData.cpp
+         CCControlLoader.cpp
+         CCControlButtonLoader.cpp
+         CCBValue.cpp
+         Generating Code...
+         Compiling...
+         CCBSequenceProperty.cpp
+         CCBSequence.cpp
+         CCBReader.cpp
+         CCBKeyframe.cpp
+         CCBFileLoader.cpp
+         CCBAnimationManager.cpp
+         AssetsManager.cpp
+         Generating Code...
+       PreLinkEvent:
+         if not exist "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\" mkdir "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         xcopy /Y /Q "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\libwebsockets\win32\lib\*.*" "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         xcopy /Y /Q "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\..\..\external\sqlite3\libraries\win32\*.*" "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         
+         :VCEnd
+         2 File(s) copied
+         2 File(s) copied
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.dll" /NOLOGO /LIBPATH:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\\" opengl32.lib glew32.lib libzlib.lib libpng.lib libcurl_imp.lib libjpeg.lib libtiff.lib libwebp.lib libiconv.lib pthreadVCE2.lib libcocos2d.lib libchipmunk.lib libCocosDenshion.lib websockets.lib sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.lib" /MACHINE:X86 /SAFESEH /DLL Debug.win32\AssetsManager.obj
+         Debug.win32\CCBAnimationManager.obj
+         Debug.win32\CCBFileLoader.obj
+         Debug.win32\CCBKeyframe.obj
+         Debug.win32\CCBReader.obj
+         Debug.win32\CCBSequence.obj
+         Debug.win32\CCBSequenceProperty.obj
+         Debug.win32\CCBValue.obj
+         Debug.win32\CCControlButtonLoader.obj
+         Debug.win32\CCControlLoader.obj
+         Debug.win32\CCData.obj
+         Debug.win32\CCLabelBMFontLoader.obj
+         Debug.win32\CCLabelTTFLoader.obj
+         Debug.win32\CCLayerColorLoader.obj
+         Debug.win32\CCLayerGradientLoader.obj
+         Debug.win32\CCLayerLoader.obj
+         Debug.win32\CCMenuItemImageLoader.obj
+         Debug.win32\CCMenuItemLoader.obj
+         Debug.win32\CCNode+CCBRelativePositioning.obj
+         Debug.win32\CCNodeLoader.obj
+         Debug.win32\CCNodeLoaderLibrary.obj
+         Debug.win32\CCParticleSystemQuadLoader.obj
+         Debug.win32\CCScale9SpriteLoader.obj
+         Debug.win32\CCScrollViewLoader.obj
+         Debug.win32\CCSpriteLoader.obj
+         Debug.win32\CCActionTimeline.obj
+         Debug.win32\CCActionTimelineCache.obj
+         Debug.win32\CCFrame.obj
+         Debug.win32\CCNodeReader.obj
+         Debug.win32\CCTimeLine.obj
+         Debug.win32\CCActionEaseEx.obj
+         Debug.win32\CCActionFrame.obj
+         Debug.win32\CCActionFrameEasing.obj
+         Debug.win32\CCActionManager.obj
+         Debug.win32\CCActionNode.obj
+         Debug.win32\CCActionObject.obj
+         Debug.win32\CCArmatureAnimation.obj
+         Debug.win32\CCProcessBase.obj
+         Debug.win32\CCTween.obj
+         Debug.win32\CCArmature.obj
+         Debug.win32\CCBone.obj
+         Debug.win32\CCDatas.obj
+         Debug.win32\CCBatchNode.obj
+         Debug.win32\CCDecorativeDisplay.obj
+         Debug.win32\CCDisplayFactory.obj
+         Debug.win32\CCDisplayManager.obj
+         Debug.win32\CCSkin.obj
+         Debug.win32\CCColliderDetector.obj
+         Debug.win32\CCArmatureDataManager.obj
+         Debug.win32\CCArmatureDefine.obj
+         Debug.win32\CCDataReaderHelper.obj
+         Debug.win32\CCSpriteFrameCacheHelper.obj
+         Debug.win32\CCTransformHelp.obj
+         Debug.win32\CCTweenFunction.obj
+         Debug.win32\CCUtilMath.obj
+         Debug.win32\CCComAttribute.obj
+         Debug.win32\CCComAudio.obj
+         Debug.win32\CCComController.obj
+         Debug.win32\CCComRender.obj
+         Debug.win32\CCInputDelegate.obj
+         Debug.win32\UIWidget.obj
+         Debug.win32\UILayout.obj
+         Debug.win32\UILayoutDefine.obj
+         Debug.win32\UILayoutParameter.obj
+         Debug.win32\CocosGUI.obj
+         Debug.win32\UIHelper.obj
+         Debug.win32\UITouchGroup.obj
+         Debug.win32\UIListView.obj
+         Debug.win32\UIPageView.obj
+         Debug.win32\UIScrollView.obj
+         Debug.win32\UIButton.obj
+         Debug.win32\UICheckBox.obj
+         Debug.win32\UIImageView.obj
+         Debug.win32\UILabel.obj
+         Debug.win32\UILabelAtlas.obj
+         Debug.win32\UILabelBMFont.obj
+         Debug.win32\UILoadingBar.obj
+         Debug.win32\UIRichText.obj
+         Debug.win32\UISlider.obj
+         Debug.win32\UITextField.obj
+         Debug.win32\CocoLoader.obj
+         Debug.win32\DictionaryHelper.obj
+         Debug.win32\GUIReader.obj
+         Debug.win32\SceneReader.obj
+         Debug.win32\ButtonReader.obj
+         Debug.win32\CheckBoxReader.obj
+         Debug.win32\ImageViewReader.obj
+         Debug.win32\LabelAtlasReader.obj
+         Debug.win32\LabelBMFontReader.obj
+         Debug.win32\LabelReader.obj
+         Debug.win32\LayoutReader.obj
+         Debug.win32\ListViewReader.obj
+         Debug.win32\LoadingBarReader.obj
+         Debug.win32\PageViewReader.obj
+         Debug.win32\ScrollViewReader.obj
+         Debug.win32\SliderReader.obj
+         Debug.win32\TextFieldReader.obj
+         Debug.win32\WidgetReader.obj
+         Debug.win32\ObjectFactory.obj
+         Debug.win32\TriggerBase.obj
+         Debug.win32\TriggerMng.obj
+         Debug.win32\TriggerObj.obj
+         Debug.win32\CCControl.obj
+         Debug.win32\CCControlButton.obj
+         Debug.win32\CCControlColourPicker.obj
+         Debug.win32\CCControlHuePicker.obj
+         Debug.win32\CCControlPotentiometer.obj
+         Debug.win32\CCControlSaturationBrightnessPicker.obj
+         Debug.win32\CCControlSlider.obj
+         Debug.win32\CCControlStepper.obj
+         Debug.win32\CCControlSwitch.obj
+         Debug.win32\CCControlUtils.obj
+         Debug.win32\CCInvocation.obj
+         Debug.win32\CCScale9Sprite.obj
+         Debug.win32\CCEditBox.obj
+         Debug.win32\CCEditBoxImplWin.obj
+         Debug.win32\CCScrollView.obj
+         Debug.win32\CCSorting.obj
+         Debug.win32\CCTableView.obj
+         Debug.win32\CCTableViewCell.obj
+         Debug.win32\LocalStorage.obj
+         Debug.win32\HttpClient.obj
+         Debug.win32\Websocket.obj
+         Debug.win32\CCPhysicsDebugNode.obj
+         Debug.win32\CCPhysicsSprite.obj
+         Debug.win32\Animation.obj
+         Debug.win32\AnimationState.obj
+         Debug.win32\AnimationStateData.obj
+         Debug.win32\Atlas.obj
+         Debug.win32\AtlasAttachmentLoader.obj
+         Debug.win32\Attachment.obj
+         Debug.win32\AttachmentLoader.obj
+         Debug.win32\Bone.obj
+         Debug.win32\BoneData.obj
+         Debug.win32\CCSkeleton.obj
+         Debug.win32\CCSkeletonAnimation.obj
+         Debug.win32\extension.obj
+         Debug.win32\Json.obj
+         Debug.win32\RegionAttachment.obj
+         Debug.win32\Skeleton.obj
+         Debug.win32\SkeletonData.obj
+         Debug.win32\SkeletonJson.obj
+         Debug.win32\Skin.obj
+         Debug.win32\Slot.obj
+         Debug.win32\SlotData.obj
+         "Debug.win32\spine-cocos2dx.obj"
+         Debug.win32\pch.obj
+         Debug.win32\Win32InputBox.obj
+     1>AssetsManager.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.lib and object D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.exp
+         libExtensions.vcxproj -> D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libExtensions.dll
+     1>Done Building Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\extensions\proj.win32\libExtensions.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:26.84

@@ -1,0 +1,34 @@
+Emulator pixmap support
+
+Signatures
+
+typedef void (*riG_SignatureRecognizedCallback)(void);
+typedef void (*riG_SignatureDisappearedCallback)(void);
+
+typedef struct {
+	uint16_t x; // x location of pixmap strip
+	uint16_t y; // y location of pixmap strip
+	uint16_t Length; // number of pixels
+	uint8_t BitsPerPixel;
+	void *PixelData;
+	riG_SignatureRecognizedCallback SignatureRecognized;
+	riG_SignatureDisappearedCallback SignatureDisappeared;
+} riG_SignatureStripRecognizerSpec;
+
+typedef struct {
+	uint16_t x;
+	uint16_t y;
+	uint32_t Color;
+} riG_SignaturePixelPoint;
+
+typedef struct {
+	riG_SignaturePixelPoint *Points; // array of points
+	uint16_t Count; // number of points
+	uint8_t BitsPerPixel;
+	riG_SignatureRecognizedCallback SignatureRecognized;
+	riG_SignatureDisappearedCallback SignatureDisappeared;
+} riG_SignaturePixelPointRecognizerSpec;
+
+
+addSignaturePixmapStrip(riG_SignatureStripRecognizerSpec signature);
+addSignaturePixelPoints(riG_SignaturePixelPointsRecognizerSpec signature);

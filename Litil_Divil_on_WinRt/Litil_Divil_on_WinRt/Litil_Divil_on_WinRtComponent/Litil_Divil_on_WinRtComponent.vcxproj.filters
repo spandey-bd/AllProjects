@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="SimplePixelShader.hlsl" />
+    <FxCompile Include="SimpleVertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Litil_Divil_on_WinRtComponent.cpp" />
+    <ClCompile Include="CubeRenderer.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="Direct3DContentProvider.cpp" />
+    <ClCompile Include="Pax86Renderer.cpp" />
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Litil_Divil_on_WinRtComponent.h" />
+    <ClInclude Include="CubeRenderer.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="Direct3DContentProvider.h" />
+    <ClInclude Include="Pax86Renderer.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\litil_divil_on_winrt\splashscreenimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DIVIL">
+      <UniqueIdentifier>{4a26f96b-bf43-4bd4-bdfe-1bc6ab56a80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIVIL\CD">
+      <UniqueIdentifier>{6a1420bf-4b56-4f35-bd3b-c808a4733c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIVIL\CD\GFX">
+      <UniqueIdentifier>{1e963329-d4a2-4fc9-b169-085065f1a6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIVIL\GFX">
+      <UniqueIdentifier>{6c7f565f-582f-411e-bee6-ce975db68175}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DIVIL\CD\BARMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\CHESS.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DD.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DEATHMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DEMON.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DEMONMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DIVIL.EXE">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\DRAGMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\FROGMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GOB.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GOBMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL1.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL1.MOO">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL2.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL2.MOO">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL3.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL3.MOO">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL4.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL4.MOO">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL5.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL5.MOO">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\MED.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\NEWMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\OLDDEATH.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\RODMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\SIREN.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\SPIDER.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\SPIDMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\WALKMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\WITCHMAP.MAP">
+      <Filter>DIVIL\CD</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A1.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A1.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A2.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A2.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ARENA5.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ARENA5.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BAR.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BAR.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BIGCHIME.VOC">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BUB.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BUB.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\CHESS.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\CHESS.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DARK.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DARK.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD1.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD1.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEATH.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEATH.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEMON.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEMON.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DRAGON.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DRAGON.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENDSEQ.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENDSEQ.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENT.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENT.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\EXIT.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\EXIT.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FF.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FONT1.FON">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FROG.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FROG.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FURNACE.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FURNACE.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GARDEN.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GARDEN.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOB.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOB.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD1.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD2.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD4.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD5.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOODIES.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\HOUR.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\HOUR.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INTRO.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INTRO.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INVEN.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INVEN.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LASER.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LASER.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LAVA.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LAVA.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL1V.LD1">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL1W.LDS">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL2V.LD1">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3V.LD1">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL4V.LD1">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL5V.LD1">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LOADG.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LOADG.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MAC.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MAC.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MED.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MED.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MEMSAVE.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MUTT.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\OBJECTS.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REALDARK.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REALDARK.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REQ.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REQ.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ROD.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ROD.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAC.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAC.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAVE.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAVE.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SIREN.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SIREN.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SKULL.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SKULL.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOL.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOL.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOUL.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOUL.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SPIDER.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SPIDER.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SWAMP.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SWAMP.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TOMB.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TOMB.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT1.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT2.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT3.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORTURE.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\WITCH.BIN">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\WITCH.CFX">
+      <Filter>DIVIL\CD\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\ADL.EFF">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\BIGCHIME.VOC">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\D.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DDSOUND.CFX">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DINTRO.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DINTRO.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DIVIL.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.ADL">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.ROL">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.SC">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\END1.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\END1.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\ENT.NDX">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\FONT1.FON">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\FULL.EFF">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\FXENTRAN.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\INTRO.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\INTRO.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTFIX.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\MEMSAVE.CFX">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PREM.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PREM.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TEST.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TEST.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORTURE.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TORTURE.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.A_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.MUS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.R_V">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.RLD">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\DIVIL.BAT">
+      <Filter>DIVIL</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL1V.LD1">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL1W.LDS">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL2V.LD1">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL3V.LD1">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL5V.LD1">
+      <Filter>DIVIL\GFX</Filter>
+    </None>
+    <None Include="..\DIVIL\DIVILS.CFG">
+      <Filter>DIVIL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\DIVIL\GFX\LEVEL4V.LD1">
+      <Filter>DIVIL\GFX</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\pax86\pax86.lib" />
+  </ItemGroup>
+</Project>

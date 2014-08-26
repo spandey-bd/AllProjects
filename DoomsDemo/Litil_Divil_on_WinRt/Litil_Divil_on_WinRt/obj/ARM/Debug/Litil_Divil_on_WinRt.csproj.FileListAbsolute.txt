@@ -1,0 +1,5 @@
+C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\obj\ARM\Debug\Assets\App.g.cs
+C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\obj\ARM\Debug\MainPage.g.cs
+C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\obj\ARM\Debug\PhoneDirect3DXamlAppInterop.g.resources
+C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\obj\ARM\Debug\PhoneDirect3DXamlAppInterop.Resources.AppResources.resources
+C:\Users\Sudheesh.Nair\Desktop\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\Litil_Divil_on_WinRt\obj\ARM\Debug\Litil_Divil_on_WinRt.csproj.GenerateResource.Cache

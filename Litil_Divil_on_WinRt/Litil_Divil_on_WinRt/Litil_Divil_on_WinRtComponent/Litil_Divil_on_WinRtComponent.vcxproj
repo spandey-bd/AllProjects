@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{f498b494-15ae-4463-aad6-b7fc37f1ff46}</ProjectGuid>
+    <RootNamespace>PhoneDirect3DXamlAppComponent</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <WinMDAssembly>true</WinMDAssembly>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <!-- If OutDir was set outside of the project file, then we will append ProjectName -->
+    <OutDir Condition="'$(OutDirWasSpecified)' == 'true'">$(OutDir)\$(MSBuildProjectName)\</OutDir>
+    <!-- else, OutDir needs to have project specific directory in order to handle files with unique names -->
+    <OutDir Condition="'$(OutDirWasSpecified)' != 'true' and '$(Platform)' == 'Win32'">$(SolutionDir)$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <OutDir Condition="'$(OutDirWasSpecified)' != 'true' and '$(Platform)' != 'Win32'">$(SolutionDir)$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <!-- After OutDir has been fixed, disable Microsoft.common.targets from fixing it again -->
+    <OutDirWasSpecified>false</OutDirWasSpecified>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(SolutionDir)\pax86\include;$(ProjectDir)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies);pax86.lib;xaudio2.lib;ck.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)\pax86;$(ProjectDir)\lib</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WINRT_DLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(SolutionDir)\pax86\include;$(ProjectDir)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies);pax86.lib;xaudio2.lib;ck.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)\pax86;$(ProjectDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WINRT_DLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(SolutionDir)\pax86\include;$(ProjectDir)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies);pax86.lib;xaudio2.lib;ck.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)\pax86;$(ProjectDir)\lib</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>_WINRT_DLL;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>$(SolutionDir)\pax86\include;$(ProjectDir)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies);pax86.lib;xaudio2.lib;ck.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>$(SolutionDir)\pax86;$(ProjectDir)\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Litil_Divil_on_WinRtComponent.h" />
+    <ClInclude Include="CubeRenderer.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="Direct3DContentProvider.h" />
+    <ClInclude Include="Pax86Renderer.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Litil_Divil_on_WinRtComponent.cpp" />
+    <ClCompile Include="CubeRenderer.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="Direct3DContentProvider.cpp" />
+    <ClCompile Include="Pax86Renderer.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SimplePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="SimpleVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\litil_divil_on_winrt\splashscreenimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DIVIL\CD\BARMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\CHESS.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DD.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DEATHMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DEMON.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DEMONMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DIVIL.EXE">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\DRAGMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\FROGMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A1.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A1.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A2.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\A2.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ARENA5.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ARENA5.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BAR.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BAR.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BIGCHIME.VOC">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BUB.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\BUB.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\CHESS.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\CHESS.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DARK.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DARK.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD1.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DD1.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEATH.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEATH.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEMON.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DEMON.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DRAGON.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\DRAGON.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENDSEQ.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENDSEQ.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENT.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ENT.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\EXIT.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\EXIT.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FF.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FONT1.FON">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FROG.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FROG.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FURNACE.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\FURNACE.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GARDEN.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GARDEN.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOB.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOB.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD1.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD2.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD4.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOOD5.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\GOODIES.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\HOUR.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\HOUR.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INTRO.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INTRO.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INVEN.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\INVEN.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LASER.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LASER.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LAVA.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LAVA.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL1V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL1W.LDS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL2V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL3V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL4V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LEVEL5V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LOADG.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\LOADG.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MAC.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MAC.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MED.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MED.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MEMSAVE.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\MUTT.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\OBJECTS.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REALDARK.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REALDARK.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REQ.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\REQ.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ROD.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\ROD.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAC.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAC.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAVE.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SAVE.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SIREN.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SIREN.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SKULL.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SKULL.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOL.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOL.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOUL.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SOUL.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SPIDER.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SPIDER.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SWAMP.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\SWAMP.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TOMB.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TOMB.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT1.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT2.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORT3.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\TORTURE.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\WITCH.BIN">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GFX\WITCH.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GOB.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\GOBMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL1.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL1.MOO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL2.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL2.MOO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL3.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL3.MOO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL4.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL4.MOO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL5.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\LEVEL5.MOO">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\MED.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\NEWMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\OLDDEATH.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\RODMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\SIREN.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\SPIDER.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\SPIDMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\WALKMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\CD\WITCHMAP.MAP">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\DIVIL.BAT">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\DIVILS.CFG">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\ADL.EFF">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\AMBIENT.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\BIGCHIME.VOC">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMBAT.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\COMIC.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\D.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DDSOUND.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DINTRO.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DINTRO.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DIVIL.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.ADL">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.ROL">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\DRIVER.SC">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\END1.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\END1.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\ENT.NDX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\FONT1.FON">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\FULL.EFF">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\FXENTRAN.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\INTRO.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\INTRO.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL1V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL1W.LDS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL2V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LEVEL3V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <Text Include="..\DIVIL\GFX\LEVEL4V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <FileType>Document</FileType>
+    </Text>
+    <None Include="..\DIVIL\GFX\LEVEL5V.LD1">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTFIX.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\LOSTSOUL.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\MEMSAVE.CFX">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PREM.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PREM.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\PUZZLE.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SALOON.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SLEEPY.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\SPIDER.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TEST.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TEST.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT1.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORT2.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORTURE.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TORTURE.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\TUNNEL.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.A_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.MUS">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.RLD">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\DIVIL\GFX\WESTERN.R_V">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\pax86\pax86.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

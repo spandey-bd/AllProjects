@@ -1,0 +1,41 @@
+﻿Build started 7/22/2014 5:55:26 PM.
+     1>Project "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\RetroInfinityDemo.vcxproj" on node 2 (Build target(s)).
+     1>CreateWinMD:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\..\..\..\cocos2dx\platform\third_party\winrt\libraries\vs2012\Win32\\" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\cocos2d" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\libExtensions" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\CocosDenshion" libEGL.lib libGLESv2.lib kernel32.lib /NODEFAULTLIB:LIBCMT.lib /MANIFEST:NO /DEBUG /PDB:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.pdb" /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Win32\Debug\AppDelegate.obj
+         Win32\Debug\RetroInfinity.obj
+         Win32\Debug\App.xaml.obj
+         Win32\Debug\MainPage.xaml.obj
+         Win32\Debug\pch.obj
+         Win32\Debug\XamlTypeInfo.Impl.g.obj
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\cocos2d\libcocos2d.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\CocosDenshion\CocosDenshion.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\libExtensions\libExtensions.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\Box2D\libBox2D.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\chipmunk\libchipmunk.lib"
+         Generating code
+         Finished generating code
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\..\..\..\cocos2dx\platform\third_party\winrt\libraries\vs2012\Win32\\" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\cocos2d" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\libExtensions" /LIBPATH:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\\Win32\Debug\CocosDenshion" libEGL.lib libGLESv2.lib kernel32.lib /NODEFAULTLIB:LIBCMT.lib /MANIFEST:NO /DEBUG /PDB:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.pdb" /SUBSYSTEM:WINDOWS /LTCG /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Win32\Debug\AppDelegate.obj
+         Win32\Debug\RetroInfinity.obj
+         Win32\Debug\App.xaml.obj
+         Win32\Debug\MainPage.xaml.obj
+         Win32\Debug\pch.obj
+         Win32\Debug\XamlTypeInfo.Impl.g.obj
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\cocos2d\libcocos2d.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\CocosDenshion\CocosDenshion.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\libExtensions\libExtensions.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\Box2D\libBox2D.lib"
+         "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\chipmunk\libchipmunk.lib"
+         Win32\Debug\XamlTypeInfo.g.obj
+            Creating library E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.lib and object E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.exp
+         Generating code
+         Finished generating code
+         RetroInfinityDemo.vcxproj -> E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\RetroInfinityDemo.exe
+       _GenerateProjectPriFileCore:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\MakePri.exe New -ProjectRoot E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\ -ConfigXml Win32\Debug\priconfig.xml -OutputFile E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\RetroInfinityDemo\resources.pri -IndexName 16A6CBD7-44EF-4BD8-8ED6-D6D037B23B93 -Verbose -Overwrite  
+     1>C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\AppxPackage\Microsoft.AppXPackage.Targets(808,9): warning APPX0108: The certificate specified has expired. For more information about renewing certificates, see http://go.microsoft.com/fwlink/?LinkID=241478.
+     1>Done Building Project "E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\RetroInfinityDemo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.64

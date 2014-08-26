@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{026B2BAD-4B00-4448-A6DF-575A2960EF27}</ProjectGuid>
+    <RootNamespace>pax86_VS_proj</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\source\adlib.S" />
+    <None Include="..\source\CGA.S" />
+    <None Include="..\source\cpu.S" />
+    <None Include="..\source\cpu_0F.S" />
+    <None Include="..\source\cpu_0F_66.S" />
+    <None Include="..\source\cpu_0F_67.S" />
+    <None Include="..\source\cpu_0F_USE32.S" />
+    <None Include="..\source\cpu_386.S" />
+    <None Include="..\source\cpu_66.S" />
+    <None Include="..\source\cpu_67.S" />
+    <None Include="..\source\cpu_prot.S" />
+    <None Include="..\source\cpu_SIB.S" />
+    <None Include="..\source\cpu_string.S" />
+    <None Include="..\source\EGA.S" />
+    <None Include="..\source\fn_tab.S" />
+    <None Include="..\source\MCGA.S" />
+    <None Include="..\source\MODEX.S" />
+    <None Include="..\source\pic.S" />
+    <None Include="..\source\ports.S" />
+    <None Include="..\source\ports_SB.S" />
+    <None Include="..\source\sb.S" />
+    <None Include="..\source\sin_tab.S" />
+    <None Include="..\source\TEXT.S" />
+    <None Include="..\source\tl_tab.S" />
+    <None Include="..\include\defines.inc" />
+    <None Include="..\include\gen_16.inc" />
+    <None Include="..\include\gen_32.inc" />
+    <None Include="..\include\gen_66.inc" />
+    <None Include="..\include\gen_67.inc" />
+    <None Include="..\include\macros.inc" />
+    <None Include="..\Android.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\BIOS_init.c" />
+    <ClCompile Include="..\source\DOS_device.c" />
+    <ClCompile Include="..\source\DOS_fcb.c" />
+    <ClCompile Include="..\source\DOS_file.c" />
+    <ClCompile Include="..\source\DOS_kernel.c" />
+    <ClCompile Include="..\source\DOS_mem.c" />
+    <ClCompile Include="..\source\DOS_task.c" />
+    <ClCompile Include="..\source\int10h.c" />
+    <ClCompile Include="..\source\int21h.c" />
+    <ClCompile Include="..\source\int67h.c" />
+    <ClCompile Include="..\source\ints.c" />
+    <ClCompile Include="..\source\mouse.c" />
+    <ClCompile Include="..\source\pax86retro.c" />
+    <ClCompile Include="..\source\serial.c" />
+    <ClCompile Include="..\source\timer.c" />
+    <ClCompile Include="..\source\XMS.c" />
+    <ClCompile Include="..\android\audio.c" />
+    <ClCompile Include="..\android\native.c" />
+    <ClCompile Include="..\android\register_natives.c" />
+    <ClCompile Include="..\source\rpi_main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\libretro.h" />
+    <ClInclude Include="..\include\pacpu.h" />
+    <ClInclude Include="..\include\pados.h" />
+    <ClInclude Include="..\include\pax86.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

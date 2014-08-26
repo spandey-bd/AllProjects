@@ -1,0 +1,9 @@
+﻿Build started 7/22/2014 5:55:25 PM.
+     1>Project "E:\Git\cocos2d-x-2.2.4\extensions\proj.winrt\libExtensions.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         libExtensions.vcxproj -> E:\Git\cocos2d-x-2.2.4\projects\RetroInfinityDemo\proj.winrt\WinRT\Win32\Debug\libExtensions\libExtensions.lib
+     1>Done Building Project "E:\Git\cocos2d-x-2.2.4\extensions\proj.winrt\libExtensions.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.25

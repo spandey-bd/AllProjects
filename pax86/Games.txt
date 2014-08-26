@@ -1,0 +1,21 @@
+Fatal Racing:				OK?
+Fragile Allegiance:			OK?
+Litl Divil:				OK?
+Mindbender:				OK?
+Normality:					OK? (Graphics problems in rpix86?)
+Retribution:				OK?
+ROTH:						OK?
+Sandwarriors:				OK?
+Slipstream 5000:			OK?
+Spacewrecked:				OK?
+Utopia Plus:				OK?
+
+
+Working pax86 configuration for many Gremlin Interactive games:
+
+SoundCard=0xe000
+SoundPort=0x220
+SoundIRQ=7
+SoundDMA=1
+MusicCard=0xa002
+MusicPort=0x388

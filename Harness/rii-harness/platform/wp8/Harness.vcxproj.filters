@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>17b52f90-9b33-4188-8a0e-808582bbabbc</UniqueIdentifier>
+      <Extensions>ico;bmp;dlg;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;resw;resjson</Extensions>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{6334487b-237a-42bc-b501-2caf08cfd5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\media">
+      <UniqueIdentifier>{e113c604-2f48-45cd-9d9f-d0947d923074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\media\sd">
+      <UniqueIdentifier>{d5bf15bf-55a7-4562-b14a-1918f26b0ecf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\ApplicationIcon.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\AlignmentGrid.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Tiles\IconicTileSmall.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\A.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\A_pressed.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\B.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\B_pressed.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\DPad.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\X.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\X_pressed.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\Y.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+    <Image Include="..\..\resources\media\sd\Y_pressed.png">
+      <Filter>resources\media\sd</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Harness.cpp" />
+    <ClCompile Include="..\..\src\HarnessScene.cpp" />
+    <ClCompile Include="..\..\src\LibretroCallbacks.cpp" />
+    <ClCompile Include="..\..\..\rii-libretro\test\LibretroTestCore.c" />
+    <ClCompile Include="..\..\src\EmulatorPixmapNode.cpp" />
+    <ClCompile Include="..\..\src\AppDelegate.cpp" />
+    <ClCompile Include="..\..\src\EmulatorLayer.cpp" />
+    <ClCompile Include="..\..\src\gameconfig.c" />
+    <ClCompile Include="..\..\src\InputModule.cpp" />
+    <ClCompile Include="..\..\src\LibretroWrapper.c" />
+    <ClCompile Include="..\..\src\VCButton.cpp" />
+    <ClCompile Include="..\..\src\VirtualController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Harness.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\rii-libretro\test\22k16-loop.raw" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,65 @@
+﻿Build started 7/10/2014 12:17:29 PM.
+     1>Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\liblua.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         if not exist "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\" mkdir "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         xcopy /Y /Q "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\luajit\win32\*.*" "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\"
+         :VCEnd
+         2 File(s) copied
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\pthread" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\CocosDenshion\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\extensions" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\extensions\network" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\external\libwebsockets\win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\tolua" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\luajit\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /D COCOS2D_DEBUG /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4996 /wd4800 /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\cocos2dx_support\CCBProxy.cpp ..\cocos2dx_support\CCLuaBridge.cpp ..\cocos2dx_support\CCLuaEngine.cpp ..\cocos2dx_support\CCLuaStack.cpp ..\cocos2dx_support\CCLuaValue.cpp ..\cocos2dx_support\Cocos2dxLuaLoader.cpp ..\cocos2dx_support\LuaCocos2d.cpp ..\cocos2dx_support\LuaCocoStudio.cpp ..\cocos2dx_support\lua_cocos2dx_cocostudio_manual.cpp ..\cocos2dx_support\lua_cocos2dx_extensions_manual.cpp ..\cocos2dx_support\lua_cocos2dx_manual.cpp ..\cocos2dx_support\Lua_extensions_CCB.cpp ..\cocos2dx_support\Lua_web_socket.cpp
+         Lua_web_socket.cpp
+         Lua_extensions_CCB.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         lua_cocos2dx_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         lua_cocos2dx_extensions_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         lua_cocos2dx_cocostudio_manual.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         LuaCocoStudio.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         LuaCocos2d.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         Cocos2dxLuaLoader.cpp
+         CCLuaValue.cpp
+         CCLuaStack.cpp
+         CCLuaEngine.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         CCLuaBridge.cpp
+         CCBProxy.cpp
+     1>d:\retro infinity\coco setups\cocos2d-x-2.2.4\extensions\cocostudio\json\cocoloader.h(72): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\win32" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\pthread" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\CocosDenshion\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\extensions" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\extensions\network" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\..\..\external\libwebsockets\win32\include" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\tolua" /I"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\..\luajit\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /D COCOS2D_DEBUG /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TC /wd4996 /wd4800 /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\cocos2dx_support\tolua_fix.c ..\tolua\tolua_event.c ..\tolua\tolua_is.c ..\tolua\tolua_map.c ..\tolua\tolua_push.c ..\tolua\tolua_to.c
+         tolua_to.c
+         tolua_push.c
+         tolua_map.c
+         tolua_is.c
+         tolua_event.c
+         tolua_fix.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\liblua.lib" /NOLOGO Debug.win32\CCBProxy.obj
+         Debug.win32\CCLuaBridge.obj
+         Debug.win32\CCLuaEngine.obj
+         Debug.win32\CCLuaStack.obj
+         Debug.win32\CCLuaValue.obj
+         Debug.win32\Cocos2dxLuaLoader.obj
+         Debug.win32\LuaCocos2d.obj
+         Debug.win32\LuaCocoStudio.obj
+         Debug.win32\lua_cocos2dx_cocostudio_manual.obj
+         Debug.win32\lua_cocos2dx_extensions_manual.obj
+         Debug.win32\lua_cocos2dx_manual.obj
+         Debug.win32\Lua_extensions_CCB.obj
+         Debug.win32\Lua_web_socket.obj
+         Debug.win32\tolua_fix.obj
+         Debug.win32\tolua_event.obj
+         Debug.win32\tolua_is.obj
+         Debug.win32\tolua_map.obj
+         Debug.win32\tolua_push.obj
+         Debug.win32\tolua_to.obj
+         liblua.vcxproj -> D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\liblua.lib
+     1>Done Building Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\scripting\lua\proj.win32\liblua.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:34.29

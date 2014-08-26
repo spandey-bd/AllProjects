@@ -1,0 +1,72 @@
+﻿Build started 7/1/2014 8:03:14 PM.
+     1>Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\external\chipmunk\proj.win32\chipmunk.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft SDKs\Windows\v7.1A\include" /I..\include\chipmunk /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4068 /wd4996 /analyze- /errorReport:prompt ..\src\chipmunk.c ..\src\cpArbiter.c ..\src\cpArray.c ..\src\cpBB.c ..\src\cpBBTree.c ..\src\cpBody.c ..\src\cpCollision.c ..\src\cpHashSet.c ..\src\cpPolyShape.c ..\src\cpShape.c ..\src\cpSpace.c ..\src\cpSpaceComponent.c ..\src\cpSpaceHash.c ..\src\cpSpaceQuery.c ..\src\cpSpaceStep.c ..\src\cpSpatialIndex.c ..\src\cpSweep1D.c ..\src\cpVect.c ..\src\constraints\cpConstraint.c ..\src\constraints\cpDampedRotarySpring.c ..\src\constraints\cpDampedSpring.c ..\src\constraints\cpGearJoint.c ..\src\constraints\cpGrooveJoint.c ..\src\constraints\cpPinJoint.c ..\src\constraints\cpPivotJoint.c ..\src\constraints\cpRatchetJoint.c ..\src\constraints\cpRotaryLimitJoint.c ..\src\constraints\cpSimpleMotor.c ..\src\constraints\cpSlideJoint.c
+         cpSlideJoint.c
+         cpSimpleMotor.c
+         cpRotaryLimitJoint.c
+         cpRatchetJoint.c
+         cpPivotJoint.c
+         cpPinJoint.c
+         cpGrooveJoint.c
+         cpGearJoint.c
+         cpDampedSpring.c
+         cpDampedRotarySpring.c
+         cpConstraint.c
+         cpVect.c
+         cpSweep1D.c
+         cpSpatialIndex.c
+         cpSpaceStep.c
+         cpSpaceQuery.c
+         cpSpaceHash.c
+         cpSpaceComponent.c
+         cpSpace.c
+         cpShape.c
+         Generating Code...
+         Compiling...
+         cpPolyShape.c
+         cpHashSet.c
+         cpCollision.c
+         cpBody.c
+         cpBBTree.c
+         cpBB.c
+         cpArray.c
+         cpArbiter.c
+         chipmunk.c
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libchipmunk.lib" /NOLOGO Debug.win32\chipmunk.obj
+         Debug.win32\cpArbiter.obj
+         Debug.win32\cpArray.obj
+         Debug.win32\cpBB.obj
+         Debug.win32\cpBBTree.obj
+         Debug.win32\cpBody.obj
+         Debug.win32\cpCollision.obj
+         Debug.win32\cpHashSet.obj
+         Debug.win32\cpPolyShape.obj
+         Debug.win32\cpShape.obj
+         Debug.win32\cpSpace.obj
+         Debug.win32\cpSpaceComponent.obj
+         Debug.win32\cpSpaceHash.obj
+         Debug.win32\cpSpaceQuery.obj
+         Debug.win32\cpSpaceStep.obj
+         Debug.win32\cpSpatialIndex.obj
+         Debug.win32\cpSweep1D.obj
+         Debug.win32\cpVect.obj
+         Debug.win32\cpConstraint.obj
+         Debug.win32\cpDampedRotarySpring.obj
+         Debug.win32\cpDampedSpring.obj
+         Debug.win32\cpGearJoint.obj
+         Debug.win32\cpGrooveJoint.obj
+         Debug.win32\cpPinJoint.obj
+         Debug.win32\cpPivotJoint.obj
+         Debug.win32\cpRatchetJoint.obj
+         Debug.win32\cpRotaryLimitJoint.obj
+         Debug.win32\cpSimpleMotor.obj
+         Debug.win32\cpSlideJoint.obj
+         chipmunk.vcxproj -> D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\Debug.win32\libchipmunk.lib
+     1>Done Building Project "D:\Retro Infinity\Coco Setups\cocos2d-x-2.2.4\external\chipmunk\proj.win32\chipmunk.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.14

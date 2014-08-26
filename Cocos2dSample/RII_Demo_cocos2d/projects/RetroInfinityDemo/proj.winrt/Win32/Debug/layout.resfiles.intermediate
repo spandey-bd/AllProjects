@@ -1,0 +1,17 @@
+D3Dcompiler_46.dll
+libEGL.dll
+libGLESv2.dll
+Assets\Logo.png
+Assets\SmallLogo.png
+Assets\SplashScreen.png
+Assets\StoreLogo.png
+Assets\WideLogo.png
+App.xaml
+Common\StandardStyles.xaml
+MainPage.xaml
+Assets\Resources\ball.png
+Assets\Resources\CloseNormal.png
+Assets\Resources\CloseSelected.png
+Assets\Resources\fonts\arial.ttf
+Assets\Resources\fonts\Marker Felt.ttf
+Assets\Resources\HelloWorld.png

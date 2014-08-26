@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Android Files">
+      <UniqueIdentifier>{6cd619d9-4502-43ab-bbfb-d2b71df3ba67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RaspberryPi Files">
+      <UniqueIdentifier>{3ce07531-b4ee-47d1-b829-1e54135be6a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\adlib.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\CGA.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_0F.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_0F_66.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_0F_67.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_0F_USE32.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_386.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_66.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_67.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_prot.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_SIB.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\cpu_string.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\EGA.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\fn_tab.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\MCGA.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\MODEX.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\pic.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\ports.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\ports_SB.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\sb.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\sin_tab.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\TEXT.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\source\tl_tab.S">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\include\defines.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\gen_16.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\gen_32.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\gen_66.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\gen_67.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\include\macros.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\Android.mk">
+      <Filter>Android Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\BIOS_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_device.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_fcb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_kernel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\DOS_task.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\int10h.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\int21h.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\int67h.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ints.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\mouse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\pax86retro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\serial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\XMS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\audio.c">
+      <Filter>Android Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\native.c">
+      <Filter>Android Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\android\register_natives.c">
+      <Filter>Android Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\rpi_main.c">
+      <Filter>RaspberryPi Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\libretro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pacpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pados.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pax86.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,92 @@
+﻿Build started 8/20/2014 11:07:15 AM.
+     1>Project "D:\Retro Infinity\from ujesh\rii-master\rii-harness\external\lua-5.2.2\platform\wp8\lua-5.2.2.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /nologo /W1 /WX- /Od /Oy- /D _LIB /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"ARM\Debug\\" /Fd"ARM\Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\lapi.c ..\..\src\lauxlib.c ..\..\src\lbaselib.c ..\..\src\lbitlib.c ..\..\src\lcode.c ..\..\src\lcorolib.c ..\..\src\lctype.c ..\..\src\ldblib.c ..\..\src\ldebug.c ..\..\src\ldo.c ..\..\src\ldump.c ..\..\src\lfunc.c ..\..\src\lgc.c ..\..\src\linit.c ..\..\src\liolib.c ..\..\src\llex.c ..\..\src\lmathlib.c ..\..\src\lmem.c ..\..\src\loadlib.c ..\..\src\lobject.c ..\..\src\lopcodes.c ..\..\src\loslib.c ..\..\src\lparser.c ..\..\src\lstate.c ..\..\src\lstring.c ..\..\src\lstrlib.c ..\..\src\ltable.c ..\..\src\ltablib.c ..\..\src\ltm.c ..\..\src\lua.c ..\..\src\luac.c ..\..\src\lundump.c ..\..\src\lvm.c ..\..\src\lzio.c
+         lzio.c
+         lvm.c
+         lundump.c
+         luac.c
+         lua.c
+     1>..\..\src\lua.c(425): warning C4047: 'initializing' : 'const char *' differs in levels of indirection from 'int'
+     1>..\..\src\lua.c(428): warning C4047: '=' : 'const char *' differs in levels of indirection from 'int'
+         ltm.c
+         ltablib.c
+         ltable.c
+         lstrlib.c
+         lstring.c
+         lstate.c
+         lparser.c
+         loslib.c
+     1>..\..\src\loslib.c(117): warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int'
+     1>..\..\src\loslib.c(117): warning C4024: 'lua_pushstring' : different types for formal and actual parameter 2
+         lopcodes.c
+         lobject.c
+         loadlib.c
+     1>..\..\src\loadlib.c(199): warning C4047: 'initializing' : 'HMODULE' differs in levels of indirection from 'int'
+     1>..\..\src\loadlib.c(639): warning C4047: 'initializing' : 'const char *' differs in levels of indirection from 'int'
+     1>..\..\src\loadlib.c(641): warning C4047: '=' : 'const char *' differs in levels of indirection from 'int'
+         lmem.c
+         lmathlib.c
+         llex.c
+         liolib.c
+     1>..\..\src\liolib.c(249): warning C4047: '=' : 'FILE *' differs in levels of indirection from 'int'
+         Generating Code...
+         Compiling...
+         linit.c
+         lgc.c
+         lfunc.c
+         ldump.c
+         ldo.c
+         ldebug.c
+         ldblib.c
+         lctype.c
+         lcorolib.c
+         lcode.c
+         lbitlib.c
+         lbaselib.c
+         lauxlib.c
+         lapi.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\Lib.exe /OUT:"D:\Retro Infinity\from ujesh\rii-master\rii-harness\platform\wp8\ARM\Debug\lua-5.2.2\lua-5.2.2.lib" /NOLOGO /MACHINE:ARM ARM\Debug\lapi.obj
+         ARM\Debug\lauxlib.obj
+         ARM\Debug\lbaselib.obj
+         ARM\Debug\lbitlib.obj
+         ARM\Debug\lcode.obj
+         ARM\Debug\lcorolib.obj
+         ARM\Debug\lctype.obj
+         ARM\Debug\ldblib.obj
+         ARM\Debug\ldebug.obj
+         ARM\Debug\ldo.obj
+         ARM\Debug\ldump.obj
+         ARM\Debug\lfunc.obj
+         ARM\Debug\lgc.obj
+         ARM\Debug\linit.obj
+         ARM\Debug\liolib.obj
+         ARM\Debug\llex.obj
+         ARM\Debug\lmathlib.obj
+         ARM\Debug\lmem.obj
+         ARM\Debug\loadlib.obj
+         ARM\Debug\lobject.obj
+         ARM\Debug\lopcodes.obj
+         ARM\Debug\loslib.obj
+         ARM\Debug\lparser.obj
+         ARM\Debug\lstate.obj
+         ARM\Debug\lstring.obj
+         ARM\Debug\lstrlib.obj
+         ARM\Debug\ltable.obj
+         ARM\Debug\ltablib.obj
+         ARM\Debug\ltm.obj
+         ARM\Debug\lua.obj
+         ARM\Debug\luac.obj
+         ARM\Debug\lundump.obj
+         ARM\Debug\lvm.obj
+         ARM\Debug\lzio.obj
+     1>lua.obj : warning LNK4006: main already defined in luac.obj; second definition ignored
+     1>lua.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         lua-5.2.2.vcxproj -> D:\Retro Infinity\from ujesh\rii-master\rii-harness\platform\wp8\ARM\Debug\lua-5.2.2\lua-5.2.2.lib
+     1>Done Building Project "D:\Retro Infinity\from ujesh\rii-master\rii-harness\external\lua-5.2.2\platform\wp8\lua-5.2.2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.22

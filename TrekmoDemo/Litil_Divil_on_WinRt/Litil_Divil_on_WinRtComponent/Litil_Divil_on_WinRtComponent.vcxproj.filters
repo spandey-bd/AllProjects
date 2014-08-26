@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="SimplePixelShader.hlsl" />
+    <FxCompile Include="SimpleVertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Litil_Divil_on_WinRtComponent.cpp" />
+    <ClCompile Include="CubeRenderer.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="Direct3DContentProvider.cpp" />
+    <ClCompile Include="Pax86Renderer.cpp" />
+    <ClCompile Include="pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Litil_Divil_on_WinRtComponent.h" />
+    <ClInclude Include="CubeRenderer.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="Direct3DContentProvider.h" />
+    <ClInclude Include="Pax86Renderer.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\pax86\pax86.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Litil_Divil_on_WinRt\Assets\trekmo\BANK0.GUS" />
+    <None Include="..\Litil_Divil_on_WinRt\Assets\trekmo\BANK1.GUS" />
+    <None Include="..\Litil_Divil_on_WinRt\Assets\trekmo\BANK2.GUS" />
+    <None Include="..\Litil_Divil_on_WinRt\Assets\trekmo\FILE_ID.DIZ" />
+    <None Include="..\Litil_Divil_on_WinRt\Assets\trekmo\TREKMO.EXE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\litil_divil_on_winrt\splashscreenimage.jpg" />
+  </ItemGroup>
+</Project>
