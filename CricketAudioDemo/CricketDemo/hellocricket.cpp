@@ -16,9 +16,9 @@ public:
         CkConfig config;
         CkInit(&config);
 
-        //CkBank* bank = CkBank::newBank("hellocricket.ckb");
-		CkSound* sound = CkSound::newStreamSound("hellocricket.cks");
-        //CkSound* sound = CkSound::newBankSound(bank, 0);
+        CkBank* bank = CkBank::newBank("hellocricket.ckb");
+		//CkSound* sound = CkSound::newStreamSound("hellocricket.cks");
+        CkSound* sound = CkSound::newBankSound(bank, 0);
         sound->play();
 
         while (sound->isPlaying())
@@ -28,7 +28,7 @@ public:
         }
 
         sound->destroy();
-        //bank->destroy();
+        bank->destroy();
 
         CkShutdown();
     }
